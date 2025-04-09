@@ -1,8 +1,8 @@
-require('dotenv').config()
-const { ethers } = require("ethers");
+require('dotenv').config();
+const { ethers } = require('ethers');
 
 // Load compiled contract
-const compiledContract = require("../builds/compiledContract.json");
+const compiledContract = require('../builds/compiledContract.json');
 
 // Deployment function
 const deploy = async () => {
@@ -22,13 +22,13 @@ const deploy = async () => {
   );
 
   // Deploy the contract
-  console.log("Deploying contract to Sepolia...");
+  console.log('Deploying contract to Sepolia...');
   const contract = await factory.deploy();
   await contract.deployed();
 
-  console.log("Contract deployed at:", contract.address);
+  console.log('Contract deployed at:', contract.address);
 };
 
 deploy().catch((error) => {
-  console.error("Error deploying contract:", error);
+  console.error('Error deploying contract:', error);
 });
