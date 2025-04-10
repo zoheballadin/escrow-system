@@ -168,7 +168,7 @@
     "name": "getTransactionStatus",
     "outputs": [
       {
-        "internalType": "enum Escrow.Status",
+        "internalType": "enum EscrowContract.Status",
         "name": "",
         "type": "uint8"
       }

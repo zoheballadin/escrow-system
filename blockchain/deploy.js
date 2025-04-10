@@ -15,7 +15,7 @@ if (!SEPOLIA_RPC || !PRIVATE_KEY) {
 // Define paths
 const outputPath = path.resolve(__dirname, 'contracts');
 const buildPath = path.resolve(__dirname, 'build');
-const contractName = 'Escrow'; // Update this if your contract name changes
+const contractName = 'EscrowContract'; // Update this if your contract name changes
 
 // Load compiled contract
 const abiPath = path.join(buildPath, `${contractName}.abi`);
