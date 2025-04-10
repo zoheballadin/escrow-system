@@ -42,13 +42,6 @@ const TopBar = () => {
     await fetchEnsData();
   };
 
-  // Disconnect wallet by clearing the state
-  const disconnectWallet = () => {
-    setAddress(null);
-    setEnsName(null);
-    setAvatar(null);
-  };
-
   // Set up event listeners for account and network changes
   useEffect(() => {
     window.ethereum.on('accountsChanged', () => fetchEnsData());
