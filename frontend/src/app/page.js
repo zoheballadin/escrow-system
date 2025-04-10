@@ -1,3 +1,4 @@
+'use client';
 
 import { BrowserProvider } from 'ethers';
 import { useRouter } from 'next/navigation';
