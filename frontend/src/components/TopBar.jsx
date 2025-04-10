@@ -57,8 +57,8 @@ const TopBar = () => {
     // Cleanup event listeners on component unmount
     return () => {
       if (window.ethereum.removeListener) {
-        window.ethereum.removeListener('accountsChanged');
-        window.ethereum.removeListener('chainChanged');
+        window.ethereum.removeListener('accountsChanged', () => fetchEnsData());
+        window.ethereum.removeListener('chainChanged', () => fetchEnsData());
       }
     };
   }, []);
