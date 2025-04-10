@@ -1,6 +1,6 @@
 import { BrowserProvider, ethers } from 'ethers';
-import contractAddress from '../../contracts/EscrowContract-address.json';
-import EscrowAbi from '../../contracts/EscrowContract-abi.json';
+import contractAddress from '../contracts/EscrowContract-address.json';
+import EscrowAbi from '../contracts/EscrowContract-abi.json';
 // Replace with the path to your contract's JSON file
 
 async function getContract() {

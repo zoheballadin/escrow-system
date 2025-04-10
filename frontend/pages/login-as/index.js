@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 
-const LoginAs = () => {
+const Page = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black px-4">
       <div className="bg-white rounded-2xl shadow-xl p-10 w-full max-w-md text-center">
@@ -25,4 +25,4 @@ const LoginAs = () => {
   );
 };
 
-export default LoginAs;
+export default Page;
